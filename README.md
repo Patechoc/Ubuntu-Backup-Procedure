@@ -1,6 +1,6 @@
 # Backup Ubuntu
 
-## How to home directory without on Ubuntu
+## Backup the *home* directory without on Ubuntu
 
 [Backup your home directory with rsync and skip useless folders](http://askubuntu.com/questions/545655/backup-your-home-directory-with-rsync-and-skip-useless-folders)
 
@@ -20,7 +20,8 @@ Note:
 In the ignorelist there is a section at the start with folders, that are directories, probably not worth a backup.
 
 
-## How to back/restore packages on Ubuntu
+## Backup/Restore packages
+
 [http://askubuntu.com/questions/9135/how-to-backup-settings-and-list-of-installed-packages](http://askubuntu.com/questions/9135/how-to-backup-settings-and-list-of-installed-packages)
 
 ### Programs
