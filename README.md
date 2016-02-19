@@ -13,7 +13,7 @@ wget https://raw.githubusercontent.com/Patechoc/Ubuntu-Backup-Procedure/master/i
 Then start the rsync with
 
 ```shell
-rsync -aP --exclude-from=/var/tmp/ignorelist /home/$USER/ /media/ctcc2/D8FD-39EE/ubuntuBackup/home/```shell
+rsync -aP --exclude-from=/var/tmp/ignorelist /home/$USER/ <PATH-TO-YOUR-BACKUP-PATH>/ubuntuBackup/home/```shell
 ```
 
 Note:
@@ -28,20 +28,20 @@ In the ignorelist there is a section at the start with folders, that are directo
 A quick way of backing up a list of programs is to run this:
 
 ```shell
-dpkg --get-selections > /media/ctcc2/D8FD-39EE/ubuntuBackup/packages/Package.list
-sudo cp -R /etc/apt/sources.list* /media/ctcc2/D8FD-39EE/ubuntuBackup/packages/
-sudo apt-key exportall > /media/ctcc2/D8FD-39EE/ubuntuBackup/packages/Repo.keys
+dpkg --get-selections > <PATH-TO-YOUR-BACKUP-PATH>/ubuntuBackup/packages/Package.list
+sudo cp -R /etc/apt/sources.list* <PATH-TO-YOUR-BACKUP-PATH>/ubuntuBackup/packages/
+sudo apt-key exportall > <PATH-TO-YOUR-BACKUP-PATH>/ubuntuBackup/packages/Repo.keys
 ```
 
 It will back them up in a format that dpkg can read* for after your reinstall, like this:
 
 ```shell
-sudo apt-key add /media/ctcc2/D8FD-39EE/ubuntuBackup/packages/Repo.keys
-sudo cp -R /media/ctcc2/D8FD-39EE/ubuntuBackup/packages//sources.list* /etc/apt/
+sudo apt-key add <PATH-TO-YOUR-BACKUP-PATH>/ubuntuBackup/packages/Repo.keys
+sudo cp -R <PATH-TO-YOUR-BACKUP-PATH>/ubuntuBackup/packages//sources.list* /etc/apt/
 sudo apt-get update
 sudo apt-get install dselect
 sudo dselect update
-sudo dpkg --set-selections < /media/ctcc2/D8FD-39EE/ubuntuBackup/packages/Package.list
+sudo dpkg --set-selections < <PATH-TO-YOUR-BACKUP-PATH>/ubuntuBackup/packages/Package.list
 sudo apt-get dselect-upgrade -y
 ```
 
