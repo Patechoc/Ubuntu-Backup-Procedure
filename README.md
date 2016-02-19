@@ -7,7 +7,7 @@
 Download the ignorelist to /var/tmp/ignorelist
 
 ```shell
-wget https://raw.githubusercontent.com/rubo77/rsync-homedir-excludes/master/rsync-homedir-excludes.txt -O /var/tmp/ignorelist
+wget https://raw.githubusercontent.com/Patechoc/Ubuntu-Backup-Procedure/master/ignorelist -O /var/tmp/ignorelist
 ```
 
 Then start the rsync with
