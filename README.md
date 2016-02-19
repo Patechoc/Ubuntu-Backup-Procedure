@@ -1,6 +1,6 @@
 # Backup Ubuntu
 
-## Backup the *home* directory without on Ubuntu
+## Backup the *home* directory
 
 [Backup your home directory with rsync and skip useless folders](http://askubuntu.com/questions/545655/backup-your-home-directory-with-rsync-and-skip-useless-folders)
 
