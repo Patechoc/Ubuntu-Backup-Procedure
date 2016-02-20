@@ -16,6 +16,7 @@
 ###############################################
 
 Documents/SOFT
+Documents/LSDALTON
 anaconda2
 Android
 AndroidStudioProjects
@@ -32,6 +33,7 @@ VirtualBox\ VMs
 twister
 Applications/eclipse*
 Downloads
+Document
 games
 *Popcorntime*
 Scribus
