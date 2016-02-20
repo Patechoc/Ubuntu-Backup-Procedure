@@ -13,7 +13,7 @@ wget https://raw.githubusercontent.com/Patechoc/Ubuntu-Backup-Procedure/master/i
 Then start the rsync with
 
 ```shell
-rsync -aP --exclude-from=/var/tmp/ignorelist /home/$USER/ <PATH-TO-YOUR-BACKUP-PATH>/ubuntuBackup/home/```shell
+rsync -aP --exclude-from=/var/tmp/ignorelist /home/$USER/ <PATH-TO-YOUR-BACKUP-PATH>/ubuntuBackup/home/
 ```
 
 Note:

@@ -15,6 +15,20 @@
 # (uncomment the files you don't need)        #
 ###############################################
 
+Documents/SOFT
+anaconda2
+Android
+AndroidStudioProjects
+Enthought
+google-cloud-sdk
+canopy
+Canopy
+Qt
+sumatra
+Support
+Templates
+tmp
+VirtualBox\ VMs
 .android
 .AndroidStudioBeta
 .gradle
@@ -29,7 +43,7 @@
 .twister
 twister
 Applications/eclipse*
-#Downloads
+Downloads
 games
 *Popcorntime*
 Scribus
